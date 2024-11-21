@@ -1,0 +1,15 @@
+{
+    "posts": {
+      "card1": {
+        "description": "¡Hola! Bienvenido(a). Soy Cristian, y este es mi Portafolio. Aprecio tu visita y realmente espero que te guste. Puedes encontrar más información sobre mí en la pestaña 'Acerca de mí', revisar mis proyectos en la pestaña 'Mis proyectos' y, si te gusta mi trabajo, puedes contactarme en la pestaña 'Contáctame'."
+      },
+      "card2": {
+        "description": "¡Consulta el repositorio de este proyecto en el siguiente botón!",
+        "buttonText": "¡Aquí!"
+      }
+    },
+    "pinned" :{
+        "text":"Fijado"
+    }
+  }
+  

@@ -1,0 +1,14 @@
+{
+  "posts": {
+    "card1": {
+      "description": "Heyy! Welcome! I'm Cristian, and this is my Portfolio. I appreciate your visit and I really hope you like it. You can find more information about me in the About Me tab, check out my projects in the My Projects tab and if you like my work, you can contact me in the Contact tab!"
+    },
+    "card2": {
+      "description": "Check out the repository for this project in the button!",
+      "buttonText": "Here!!"
+    }
+  },
+  "pinned" :{
+      "text":"Pinned"
+  }
+}

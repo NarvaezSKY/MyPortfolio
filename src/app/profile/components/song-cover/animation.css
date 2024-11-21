@@ -1,0 +1,18 @@
+:root {
+  --color-1: #000000;
+  --color-2: #0098a8;
+  --color-3: #0dddb1;
+}
+
+.animatedBackground {
+  background: linear-gradient(150deg, var(--color-1), var(--color-2), var(--color-3));
+  background-size: 200% 600%;
+  transition: background 2s ease-in-out;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 51% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 51% 0%; }
+}

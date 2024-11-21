@@ -1,0 +1,7 @@
+export * from './tabs/Tabs'
+export * from './footer/Footer'
+export * from './modal/ImageModal'
+export * from './card/Card'
+export * from './404/404'
+export * from './loader/Loader'
+export * from './locales/LocalesButton'

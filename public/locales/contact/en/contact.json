@@ -1,0 +1,10 @@
+{
+    "contact": {
+        "ifYouLikedMyWork": "If you like my work, you can {{contact}} here:",
+        "also": "Or you can {{findMe}} in:",
+        "findMe": "find me",
+        "contact": "contact me",
+        "orEven": "or even contract me",
+        "follow": "or even follow me (please)"
+    }
+}

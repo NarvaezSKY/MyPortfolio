@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "senathreads": "Este proyecto fue desarrollado durante mi última experiencia laboral en BPOLabs, donde trabajé en el equipo de Frontend. Fue construido utilizando React, TypeScript, Tailwind y bibliotecas de UI/UX como NextUI y MUI. Además, siguió un enfoque de arquitectura limpia, organizando los componentes de la aplicación en módulos, cada uno con sus propios componentes, hooks y carpetas compartidas. La gestión del estado global se implementó utilizando Zustand.",
+
+    "rpm": "Este proyecto es una aplicación web-móvil desarrollada durante mi tiempo en el SENA. Su función principal para motociclistas es crear, mapear, compartir y calificar rutas. Trabajé en el backend del proyecto utilizando Node.js y Express.js para desarrollar la API, y MongoDB como base de datos. Además, utilicé los servicios de Google Firebase Storage para el almacenamiento de imágenes y JWT para la gestión de tokens y autenticación. También contribuí al frontend web utilizando React y JavaScript, gestionando el contexto de la aplicación y manejando la comunicación con la API para el inicio de sesión de administradores en el sitio web.",
+
+    "twitch": "Esta fue una prueba técnica en BPOLabs, fue desarrollada con React y JavaScript, también utilicé Tailwind para los estilos, y muestra las principales categorías y los streamers más populares de Twitch. También tiene una opción de búsqueda para un juego específico en Twitch."
+  },
+  "check": "¡Échale un vistazo!"
+}

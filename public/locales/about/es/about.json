@@ -1,0 +1,41 @@
+{
+  "about": {
+    "header": "¡Hola, soy {{name}}!",
+    "description": "Con más de 1 año de experiencia en la industria del desarrollo de software, tengo habilidades en áreas como Ingeniería de datos, Ciencia de datos y Desarrollo Backend, y actualmente me enfoco un poco más en el Desarrollo Frontend, siempre asegurándome de escribir código limpio y escalable.",
+    "experienceHeader": "Mi {{underlineExperience}}:",
+    "experience": "experiencia",
+    "skillsHeader": "Actualmente tengo {{underlineSkills}} en:",
+    "skillsText": "habilidades",
+    "learningHeader": "Y también estoy {{underlineLearning}}:",
+    "learningText": "aprendiendo",
+    "learning": "(También estoy aprendiendo a usar modelos de IA como {{Whisper}}, {{PyAnnote}} y {{Phi-3-mini}})",
+    "more": "Conoce {{more}} sobre mi",
+    "moreText": "más"
+  },
+  "stack": {
+    "DB": "Base de Datos",
+    "OT": "Otras tecnologías"
+  },
+  "timeline": {
+    "frontend": "Desarrollador Frontend",
+    "fullstack": "Desarrollador Fullstack",
+    "technologist": "Tecnólogo en análisis y desarrollo de software",
+    "company": "Servicio Nacional de Aprendizaje - SENA",
+    "dates": {
+      "bpolabs": "Abril 2024 - Octubre 2024",
+      "freelance": "Septiembre 2023 - Marzo 2024",
+      "sena": "Julio 2022 - Abril 2024"
+    }
+  },
+  "studies": {
+    "description": "Le debo gran parte de mis conocimientos a la institución SENA. Allí aprendí lo básico de la programación, lógica, algoritmos, y también di mis primeros pasos con algunos de los frameworks en los que actualmente mejor me desempeño. Conocí a muchas personas que trascendieron en mi vida y que hoy puedo llamar amigos, y viví muchas historias para contar. Además, el SENA me dio una de las experiencias más emocionantes y enriquecedoras de toda mi vida, a continuación...",
+    "studiesTitle":"Mi tiempo en el "
+  },
+  "senaSoft": {
+    "description": "SENASoft es una competencia del SENA que se realiza anualmente en Colombia a nivel nacional, en la cual cientos de estudiantes de la institución compiten durante una semana en diferentes categorías de la industria del software, en una de las principales sedes del SENA en todo el país. En la edición 2023, realizada en Pereira, Risaralda, participé junto con mi compañera Sory Gonzales en la categoría de Ingeniería de Datos, una categoría patrocinada por la empresa QVision Technologies, en la cual se requieren habilidades en tecnologías de Microsoft como SQL Server, SQL Server Integration Services, SQL Analysis Services y PowerBI. Después de 6 meses de preparación, logramos obtener el {{firstPlace}}, en una de las experiencias más emocionantes que he tenido!",
+    "first": "primer lugar",
+    "QVision": "QVision Technologies",
+    "viejoSory":"Sory Gonzales",
+    "certificate": "Mi certificado de SENA/soft 2023"
+  }
+}
