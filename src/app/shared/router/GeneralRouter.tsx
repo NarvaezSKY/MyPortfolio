@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { GeneralLayout } from "../layout";
 import { Posts } from "../../posts";
 import { About } from "../../about";
@@ -10,6 +10,7 @@ export const GeneralRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<GeneralLayout />}>
+        <Route index element={<Navigate to="/feed" />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/feed" index element={<Posts />} />
         <Route path="/about" element={<About />} />
