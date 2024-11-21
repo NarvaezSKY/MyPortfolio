@@ -34,7 +34,7 @@ export const Posts = () => {
         imageSrc={dorito}
         imageAlt="dorito"
         imageVariant="GIF"
-        link="https://github.com/NarvaezSky/sena-threads"
+        link="https://github.com/NarvaezSKY/MyPortfolio.git"
         buttonText={t("posts.card2.buttonText", { ns: "posts" })}
       />
     </div>
