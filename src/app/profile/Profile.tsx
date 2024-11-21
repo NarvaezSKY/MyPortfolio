@@ -53,7 +53,7 @@ const Profile = () => {
       </div>
 
       <div className="flex flex-col md:flex-row items-center w-full py-3 px-2 space-x-0 -mt-9">
-        <div className="min-w-32 h-32 rounded-full bg-primary border-2 border-transparent overflow-hidden mb-4 md:mb-0">
+        <div className="max-w-36 min-w-36 h-36 rounded-full bg-primary border-2 border-transparent overflow-hidden mb-4 md:mb-0">
           <img
             src={profie}
             alt="Foto de perfil"
