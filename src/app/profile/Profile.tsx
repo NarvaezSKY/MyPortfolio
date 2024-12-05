@@ -4,7 +4,7 @@ import { UseSongStore } from "../shared/store";
 import SongCover from "./components/song-cover/SongCover";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import EnglishCV from "../../assets/CV/en/CV_Cristian_Narvaez_(English).pdf";
-import SpanishCV from "../../assets/CV/es/CV_Cristian_Narvaez_(Español).pdf";
+import SpanishCV from "../../assets/CV/es/CV_Cristian_Narvaez_(Spanish).pdf";
 
 import { FaBriefcase, FaCode, FaReact, FaCalendar } from "react-icons/fa";
 import profie from "../../assets/profile.jpg";
