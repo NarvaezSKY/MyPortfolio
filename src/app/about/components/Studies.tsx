@@ -28,7 +28,6 @@ export const Studies = () => {
                   setOpen(true);
                   setImage(family);
                 }}
-                loading="lazy"
               />
             </div>
             <div className="rotate-6">
@@ -40,7 +39,6 @@ export const Studies = () => {
                   setOpen(true);
                   setImage(us);
                 }}
-                loading="lazy"
               />
             </div>
           </div>
@@ -53,7 +51,6 @@ export const Studies = () => {
                 setOpen(true);
                 setImage(memories);
               }}
-              loading="lazy"
             />
           </div>
         </div>
@@ -63,7 +60,7 @@ export const Studies = () => {
         onClose={() => setOpen(false)}
         src={image}
         alt="SENA Experience Image"
-        lgSize="45%"
+        lgSize="44%"
       />
     </>
   );

@@ -36,6 +36,7 @@ export const Posts = () => {
         imageVariant="GIF"
         link="https://github.com/NarvaezSKY/MyPortfolio.git"
         buttonText={t("posts.card2.buttonText", { ns: "posts" })}
+        lgSize="40%"
       />
     </div>
   );

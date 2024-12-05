@@ -27,6 +27,7 @@ interface CardComponentProps {
   githubBackEnd?: string;
   navigate?: boolean;
   frontendOnly?: boolean;
+  lgSize?: string;
 }
 
 export const CardComponent = ({
@@ -46,6 +47,7 @@ export const CardComponent = ({
   githubBackEnd,
   navigate,
   frontendOnly,
+  lgSize,
 }: CardComponentProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isImageLoading, setIsImageLoading] = useState(true);
@@ -123,7 +125,7 @@ export const CardComponent = ({
           )}
 
           {imageSrc && imageVariant === "image" && (
-            <div className="mt-3 flex justify-center relative">
+            <div className="mt-3 flex justify-center relative aspect-[16/9]" >
               <img
                 src={imageSrc}
                 alt={imageAlt || "Image"}
@@ -138,7 +140,7 @@ export const CardComponent = ({
           )}
 
           {imageSrc && imageVariant === "GIF" && (
-            <div className="mt-3 flex justify-center">
+            <div className="mt-3 flex justify-center aspect-[16/9]">
               <img
                 src={imageSrc}
                 alt={imageAlt}
@@ -194,6 +196,7 @@ export const CardComponent = ({
           }}
           src={imageSrc}
           alt={imageAlt}
+          lgSize={lgSize}
         />
       )}
     </>

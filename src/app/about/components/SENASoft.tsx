@@ -45,7 +45,6 @@ export const SENASoft = () => {
                 setOpen(true);
                 setImage(competition);
               }}
-              loading="lazy"
             />
           </div>
           <div className="rotate-6">
@@ -57,7 +56,6 @@ export const SENASoft = () => {
                 setOpen(true);
                 setImage(winners);
               }}
-              loading="lazy"
             />
           </div>
         </div>
@@ -70,7 +68,6 @@ export const SENASoft = () => {
               setOpen(true);
               setImage(team);
             }}
-            loading="lazy"
           />
         </div>
       </div>
