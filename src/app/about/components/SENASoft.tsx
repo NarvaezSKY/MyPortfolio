@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState, Fragment } from "react";
 import { ImageModal } from "../../shared/components";
 import { useTranslation } from "react-i18next";
@@ -12,7 +13,13 @@ export const SENASoft = () => {
   const first = t("senaSoft.first", { ns: "about" });
   return (
     <>
-      <div className="flex items-center text-gray-50 mt-1 rounded-full">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center text-gray-50 mt-1 rounded-full"
+      >
         <p>
           {t("senaSoft.description", { ns: "about" })
             .split("{{firstPlace}}")
@@ -33,10 +40,16 @@ export const SENASoft = () => {
               </Fragment>
             ))}
         </p>
-      </div>
+      </motion.div>
       <div className="flex flex-col mt-10 mx-2">
         <div className="flex sm:flex-row flex-col">
-          <div className="-rotate-6 mt-3 z-40 ">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0 }}
+            className="-rotate-6 mt-3 z-40"
+          >
             <img
               src={competition}
               alt="competition"
@@ -46,8 +59,14 @@ export const SENASoft = () => {
                 setImage(competition);
               }}
             />
-          </div>
-          <div className="rotate-6">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="rotate-6"
+          >
             <img
               src={winners}
               alt="winners"
@@ -57,9 +76,15 @@ export const SENASoft = () => {
                 setImage(winners);
               }}
             />
-          </div>
+          </motion.div>
         </div>
-        <div className="flex justify-center z-40 sm:rotate-0 -rotate-6 sm:-mt-8 mt-0">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex justify-center z-40 sm:rotate-0 -rotate-6 sm:-mt-8 mt-0"
+        >
           <img
             src={team}
             alt="team"
@@ -69,9 +94,15 @@ export const SENASoft = () => {
               setImage(team);
             }}
           />
-        </div>
+        </motion.div>
       </div>
-      <div className="flex items-centern justify-center text-gray-50 mt-6 rounded-full text-justify">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="flex items-centern justify-center text-gray-50 mt-6 rounded-full text-justify"
+      >
         <a
           href="https://drive.google.com/file/d/1aSqGW665QRdo0QOKW3fd9KyECGi1aq6a/view"
           target="_blank"
@@ -79,7 +110,7 @@ export const SENASoft = () => {
         >
           {t("senaSoft.certificate", { ns: "about" })}
         </a>
-      </div>
+      </motion.div>
 
       <ImageModal
         isOpen={open}

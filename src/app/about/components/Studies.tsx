@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import family from "../../../assets/about/family.webp";
 import memories from "../../../assets/about/memories.webp";
@@ -12,14 +13,26 @@ export const Studies = () => {
   return (
     <>
       <div>
-        <div className="flex justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-center items-center"
+        >
           <p className="text-white break-words">
             {t("studies.description", { ns: "about" })}
           </p>
-        </div>
+        </motion.div>
         <div className="flex flex-col mt-10 mx-7">
           <div className="sm:flex-row flex flex-col">
-            <div className="-rotate-6 mt-5">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0 }}
+              className="-rotate-6 mt-5"
+            >
               <img
                 src={family}
                 alt="family"
@@ -29,8 +42,14 @@ export const Studies = () => {
                   setImage(family);
                 }}
               />
-            </div>
-            <div className="rotate-6">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rotate-6"
+            >
               <img
                 src={us}
                 alt="uw"
@@ -40,9 +59,15 @@ export const Studies = () => {
                   setImage(us);
                 }}
               />
-            </div>
+            </motion.div>
           </div>
-          <div className="max-w-lg mx-auto -mt-10 z-30">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="max-w-lg mx-auto -mt-10 z-30"
+          >
             <img
               src={memories}
               alt="memories"
@@ -52,7 +77,7 @@ export const Studies = () => {
                 setImage(memories);
               }}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <ImageModal

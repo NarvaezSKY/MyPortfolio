@@ -1,4 +1,5 @@
 import cooking from "../../assets/cooking.webp";
+import cookingV2 from "../../assets/cooking.v2.jpeg";
 import dorito from "../../assets/dorito-spin.gif";
 import profile from "../../assets/profile.jpg";
 import { TbPinnedFilled } from "react-icons/tb";
@@ -13,6 +14,18 @@ export const Posts = () => {
         <TbPinnedFilled size={16} className="ml-1" />
         {t("pinned.text", { ns: "posts" })}
       </div>
+      <CardComponent
+        profileImage={profile}
+        name="Cristian Narvaez"
+        date="09/07/2026"
+        username="@narvaez_sky"
+        description={t("posts.card3.description", { ns: "posts" })}
+        hashtag="#TimeFlies"
+        imageVariant="image"
+        imageSrc={cookingV2}
+        imageAlt="cooking v2"
+      />
+
       <CardComponent
         profileImage={profile}
         name="Cristian Narvaez"

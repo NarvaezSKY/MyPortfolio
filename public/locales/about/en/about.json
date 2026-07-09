@@ -1,9 +1,13 @@
 {
   "about": {
     "header": "Hey, I'm {{name}}!",
-    "description": "With more than 1 year of experience in the software development industry, I have skills in areas such as Data Engineering, Data Science and Backend Development, and currently, I focus a bit more on Frontend Development, always making sure to write clean and scalable code.",
+    "description": "With more than 2 years of experience in the industry, I have skills in data analytics and engineering, computer engineering, web development (frontend, backend, database, dev ops), implementation of automations, artificial intelligence (MCPs, use of LLMs), mobile development, and technological solutions in general. If you can imagine it, I can <s>program it</s> make it!",
     "experienceHeader": "My {{underlineExperience}}:",
     "experience": "experience",
+    "workHeader": "{{underlineWorkExperience}}:",
+    "workText": "Work experience",
+    "studiesHeader": "{{underlineStudies}}:",
+    "studiesText": "Studies",
     "skillsHeader": "I currently have {{underlineSkills}} in:",
     "skillsText": "skills",
     "learningHeader": "And I'm also {{underlineLearning}}:",
@@ -20,11 +24,16 @@
     "frontend": "Frontend Developer",
     "fullstack": "Fullstack Developer",
     "technologist": "Technologist in software analysis and development",
+    "webDev": "Web Developer / Data Analyst",
+    "computerEngineering": "Computer Engineering",
     "company": "Servicio Nacional de Aprendizaje - SENA",
+    "institution": "Institución Universitaria Colegio Mayor del Cauca",
     "dates": {
       "bpolabs": "April 2024 - October 2024",
       "freelance": "September 2023 - March 2024",
-      "sena": "July 2022 - April 2024"
+      "sena": "July 2022 - April 2024",
+      "webDev": "April 2025 - Present",
+      "computerEngineering": "February 2025 - Present"
     }
   },
   "studies": {

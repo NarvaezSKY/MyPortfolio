@@ -1,9 +1,13 @@
 {
   "about": {
     "header": "¡Hola, soy {{name}}!",
-    "description": "Con más de 1 año de experiencia en la industria del desarrollo de software, tengo habilidades en áreas como Ingeniería de datos, Ciencia de datos y Desarrollo Backend, y actualmente me enfoco un poco más en el Desarrollo Frontend, siempre asegurándome de escribir código limpio y escalable.",
+    "description": "Con más de 2 años de experiencia en la industria, tengo habilidades en analítica e ingeniería de datos, ingeniería informática, desarrollo web (frontend, backend, base de datos, dev ops), implementación de automatizaciones, inteligencia artificial (MCPs, uso de LLMs), desarrollo móvil, y soluciones tecnológicas en general, ¡si puedes imaginarlo, puedo <s>programarlo</s> hacerlo!",
     "experienceHeader": "Mi {{underlineExperience}}:",
     "experience": "experiencia",
+    "workHeader": "{{underlineWorkExperience}}:",
+    "workText": "Experiencia laboral",
+    "studiesHeader": "{{underlineStudies}}:",
+    "studiesText": "Estudios",
     "skillsHeader": "Actualmente tengo {{underlineSkills}} en:",
     "skillsText": "habilidades",
     "learningHeader": "Y también estoy {{underlineLearning}}:",
@@ -20,11 +24,16 @@
     "frontend": "Desarrollador Frontend",
     "fullstack": "Desarrollador Fullstack",
     "technologist": "Tecnólogo en análisis y desarrollo de software",
+    "webDev": "Desarrollador Web / Analista de Datos",
+    "computerEngineering": "Ingeniería Informática",
     "company": "Servicio Nacional de Aprendizaje - SENA",
+    "institution": "Institución Universitaria Colegio Mayor del Cauca",
     "dates": {
       "bpolabs": "Abril 2024 - Octubre 2024",
       "freelance": "Septiembre 2023 - Marzo 2024",
-      "sena": "Julio 2022 - Abril 2024"
+      "sena": "Julio 2022 - Abril 2024",
+      "webDev": "Abril 2025 - Actualidad",
+      "computerEngineering": "Febrero 2025 - Actualidad"
     }
   },
   "studies": {

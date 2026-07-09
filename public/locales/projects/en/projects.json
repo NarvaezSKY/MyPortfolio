@@ -1,11 +1,24 @@
 {
   "projects": {
-    "senathreads": "This project was developed during my last work experience at BPOLabs, where I worked on the Frontend team. It was built using React, TypeScript, Tailwind, and UI/UX libraries such as NextUI and MUI. Additionally, it followed a clean architecture approach, organizing the app components into modules, each containing its own components, hooks, and shared folders. The global state management was implemented using Zustand.",
-
+    "tabWork": "For Work",
+    "tabPersonal": "Personal",
+    "senathreads": "This project was developed during my work experience at BPOLabs, where I worked on the Frontend team. It was built using React, TypeScript, Tailwind, and UI/UX libraries such as NextUI and MUI. Additionally, it followed a clean architecture approach, organizing the app components into modules, each containing its own components, hooks, and shared folders. The global state management was implemented using Zustand.",
     "rpm": "This project is a web-mobile application developed during my time at SENA. Its main function for bikers is to create, map, share, and rate routes. I worked on the backend of the project using Node.js and Express.js to develop the API, and MongoDB as the database. Additionally, I utilized Google Firebase Storage services for image storage and JWT for token management and authentication. I also contributed to the web frontend using React and JavaScript, managing the application's context and handling API communication for admin login on the website.",
-
-    "twitch": "This was a technical test at BPOLabs, it was developed with React and JavaScript and i also used Tailwind for the styling, and it shows the top categories and the top streamers of Twitch, it also has a search option for a specific game on Twitch."
+    "twitch": "This was a technical test at BPOLabs, it was developed with React and JavaScript and i also used Tailwind for the styling, and it shows the top categories and the top streamers of Twitch, it also has a search option for a specific game on Twitch.",
+    "pin": {
+      "public": "Public",
+      "private": "Private",
+      "deprecated": "Deprecated"
+    },
+    "work": {
+      "intro": "I have <strong>fully developed</strong> some projects, from requirements gathering to deployment and maintenance. Take a look!",
+      "carne": "One of the largest-scale projects I've ever worked on! If you're a SENA graduate from Regional Cauca, generate your ID card and get exclusive benefits!\n\nProject developed with technologies like Next.js, Express.js, MongoDB and implementations using Google Cloud services. I really enjoyed the development process of this project, my first with Next.js, and I'm still maintaining it and adding small features like the \"Assistant\" you can see in the bottom right corner.\n\nWith +1000 IDs generated in 4 months since its official announcement, it's probably one of the highest-traffic projects I've developed. It feels good to help the institution that helped me grow. <3\n\nThese are, in addition to an image of what the app looks like, the interview they gave me (my first interview! on the day of the official announcement :'D) and an image of one of the promotional videos of the app, official initiatives from SENA Regional Cauca.",
+      "formReingr": "Internal application for managing SENA Regional Cauca apprentice re-entries. This application, developed with Next.js + Express.js, is designed to feed a Google Sheet that in turn serves as a database for a Power BI report, enabling automatic updates.",
+      "pe04": "Internal application for updating the Power BI report whose frame can be seen in the screenshot. Developed with React + Express.js, its purpose is to receive an Excel report, process it through an API, and send it formatted to a Google Sheet that serves as the basis for a Power BI report, thus facilitating automatic updates.",
+      "reportsCmr": "Internal repository for managing all the Power BI reports I've developed for the entity. Here, besides having them consolidated in one place, we make it easier to search for them to respond to specific requirements and needs.\n\nDeveloped with Next.js + Express.js and MongoDB",
+      "segCmr": "Internal application for managing commitments of the coordination I'm currently assigned to as a SENA officer. Developed with React + Express.js, it serves to create, assign, and manage all commitments and those responsible within the fiscal year, allowing the administrator to verify which commitments are soon to expire, which have already been delivered (and change their status), and notify those responsible via email about pending commitments.\n\nThe application has BackEnd services to sync all changes made to commitments with a GoogleSheet that serves as the basis for a Power BI report, whose automatic updates allow statistical visualization of delivery statuses by category and coordination member.",
+      "segIdi": "Internal application developed with React, Express.js and MongoDB, with Google Sheets and Power BI services. It serves to manage (create, edit, delete, search and generate reports) Innovation projects assigned to SENA Regional Cauca. This application also has role management and permissions to specific modules/functions based on it.\n\nAdditionally, the data stored in Mongo is synced with a Google Sheet that allows its corresponding Power BI to update automatically for statistical visualization of budget and coverage data in the Cauca department."
+    }
   },
-  
   "check": "Check it out!"
 }

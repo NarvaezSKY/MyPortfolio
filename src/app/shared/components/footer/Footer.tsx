@@ -91,7 +91,7 @@ export const Footer = () => {
         </Button>
       </div>
       <p className="text-sm text-gray-200">
-        ©2024 narvaezsky - <span className="text-xs">({almost})</span> {t("footer.rights", {ns: "footer"})}
+        ©2026 narvaezsky - <span className="text-xs">({almost})</span> {t("footer.rights", {ns: "footer"})}
       </p>
       
     </div>

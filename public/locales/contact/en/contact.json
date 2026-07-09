@@ -5,6 +5,7 @@
         "findMe": "find me",
         "contact": "contact me",
         "orEven": "or even contract me",
-        "follow": "or even follow me (please)"
+        "follow": "or even follow me (please)",
+        "pleaseContactMe": "please, contact me"
     }
 }

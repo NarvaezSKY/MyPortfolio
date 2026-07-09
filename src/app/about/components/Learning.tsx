@@ -1,8 +1,8 @@
+import { motion } from "framer-motion";
 import { Button, Tooltip } from "@nextui-org/react";
 import { FaAws } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiNestjs, SiMicrosoftsqlserver } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import { Fragment } from "react";
 
@@ -39,25 +39,13 @@ export const Learning = () => {
 
   return (
     <div>
-      <div className="flex gap-2 my-3 w-full justify-center items-center">
-        <Tooltip content="Next.js" color="secondary">
-          <Button
-            as="a"
-            target="_blank"
-            size="lg"
-            href="https://nextjs.org/"
-            variant="light"
-            isIconOnly
-            className="transition-transform duration-300 hover:scale-110 cursor-pointer animate-float"
-            style={{ animationDelay: "0s" }}
-          >
-            <RiNextjsFill
-              size={40}
-              className="text-white transition-transform duration-300 hover:scale-110 cursor-pointer"
-            />
-          </Button>
-        </Tooltip>
-
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex gap-2 my-3 w-full justify-center items-center"
+      >
         <Tooltip content="NestJS" color="secondary">
           <Button
             as="a"
@@ -67,7 +55,7 @@ export const Learning = () => {
             variant="light"
             isIconOnly
             className="transition-transform duration-300 hover:scale-110 cursor-pointer animate-float"
-            style={{ animationDelay: "1s" }}
+            style={{ animationDelay: "0s" }}
           >
             <SiNestjs
               size={40}
@@ -85,7 +73,7 @@ export const Learning = () => {
             variant="light"
             isIconOnly
             className="transition-transform duration-300 hover:scale-110 cursor-pointer animate-float"
-            style={{ animationDelay: "0s" }}
+            style={{ animationDelay: "1s" }}
           >
             <IoLogoFirebase
               size={40}
@@ -103,7 +91,7 @@ export const Learning = () => {
             variant="light"
             isIconOnly
             className="transition-transform duration-300 hover:scale-110 cursor-pointer animate-float"
-            style={{ animationDelay: "1s" }}
+            style={{ animationDelay: "0s" }}
           >
             <FaAws
               size={40}
@@ -111,32 +99,17 @@ export const Learning = () => {
             />
           </Button>
         </Tooltip>
+      </motion.div>
 
-        <Tooltip content="Microsoft SQL Server" color="secondary">
-          <Button
-            as="a"
-            target="_blank"
-            size="lg"
-            href="https://www.microsoft.com/en-us/sql-server"
-            variant="light"
-            isIconOnly
-            className="transition-transform duration-300 hover:scale-110 cursor-pointer animate-float"
-            style={{
-              animation: "float 2s ease-in-out infinite",
-              animationDelay: "0s",
-            }}
-          >
-            <SiMicrosoftsqlserver
-              size={40}
-              className="text-red-700 transition-transform duration-300 hover:scale-110 cursor-pointer"
-            />
-          </Button>
-        </Tooltip>
-      </div>
-
-      <div className="text-gray-200 text-xs font-thin w-full flex justify-center break-words my-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="text-gray-200 text-xs font-thin w-full flex justify-center break-words my-4"
+      >
         <p>{processedText}</p>
-      </div>
+      </motion.div>
     </div>
   );
 };

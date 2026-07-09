@@ -94,29 +94,31 @@ const Profile = () => {
         </p>
       </div>
 
-      <div className="sm:flex justify-center text-gray-200 mt-5 space-y-2 sm:space-y-0 sm:flex-row sm:justify-start sm:space-x-4">
-        <div className="flex items-center">
-          <FaBriefcase size={18} className="mr-1" />
-          <span className="mr-4 text-sm">{t("profile.availability")}</span>
+      <div className="flex flex-col items-center text-gray-200 mt-5 gap-2">
+        <div className="flex items-center gap-1.5">
+          <FaBriefcase size={18} />
+          <span className="text-sm">{t("profile.availability")}</span>
         </div>
-        <div className="flex items-center">
-          <FaCode size={18} className="mr-1" />
-          <span className="mr-4 text-sm">{t("profile.experience")}</span>
-        </div>
-        <div className="flex items-center">
-          <PiReadCvLogoFill size={18} className="mr-1" />
-          <a
-            href={currentLanguage === "es" ? SpanishCV : EnglishCV}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mr-4 text-sm text-primary hover:text-highlight transition-all duration-300"
-          >
-            {t("profile.CV")}
-          </a>
-        </div>
-        <div className="flex items-center">
-          <FaCalendar size={18} className="mr-1" />
-          <span className="mr-4 text-sm">{t("profile.lastUpdate")}</span>
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-1.5">
+          <div className="flex items-center gap-1.5">
+            <FaCode size={18} />
+            <span className="text-sm">{t("profile.experience")}</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <PiReadCvLogoFill size={18} />
+            <a
+              href={currentLanguage === "es" ? SpanishCV : EnglishCV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:text-highlight transition-all duration-300"
+            >
+              {t("profile.CV")}
+            </a>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <FaCalendar size={18} />
+            <span className="text-sm">{t("profile.lastUpdate")}</span>
+          </div>
         </div>
       </div>
     </div>

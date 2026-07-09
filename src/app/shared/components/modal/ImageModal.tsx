@@ -5,6 +5,7 @@ import Fade from "@mui/material/Fade";
 import Box from "@mui/material/Box";
 import { Backdrop } from "@mui/material";
 import { useTranslation } from 'react-i18next';
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -12,9 +13,13 @@ interface ImageModalProps {
   src: string;
   alt: string;
   lgSize?: string;
+  hasPrev?: boolean;
+  hasNext?: boolean;
+  onPrev?: () => void;
+  onNext?: () => void;
 }
 
-export const ImageModal = ({ isOpen, onClose, src, alt, lgSize }: ImageModalProps) => {
+export const ImageModal = ({ isOpen, onClose, src, alt, lgSize, hasPrev, hasNext, onPrev, onNext }: ImageModalProps) => {
 
   const { t } = useTranslation();
   const [toastShown, setToastShown] = useState(false);
@@ -57,6 +62,22 @@ export const ImageModal = ({ isOpen, onClose, src, alt, lgSize }: ImageModalProp
             },
           }}
         >
+          {hasPrev && (
+            <button
+              onClick={onPrev}
+              className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+            >
+              <FiChevronLeft size={24} />
+            </button>
+          )}
+          {hasNext && (
+            <button
+              onClick={onNext}
+              className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+            >
+              <FiChevronRight size={24} />
+            </button>
+          )}
           <img
             src={src}
             alt={alt}
