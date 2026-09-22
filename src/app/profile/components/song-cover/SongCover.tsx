@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Skeleton } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import { UseSongStore } from "../../../shared/store";
 import { useExtractColors } from "react-extract-colors";
@@ -7,9 +8,14 @@ import SongCoverLoader from "../song-cover-loader/SongCoverLoader";
 
 const SongCover = () => {
   const { song, loading } = UseSongStore();
+  const [coverError, setCoverError] = useState(false);
 
   const track = song?.recenttracks?.track?.[0];
-  const albumImage = track?.image?.[2]["#text"];
+  const albumImage = track?.image?.[2]?.["#text"];
+
+  useEffect(() => {
+    setCoverError(false);
+  }, [albumImage]);
 
   const { colors } = useExtractColors(albumImage, {
     maxColors: 3,
@@ -68,17 +74,18 @@ const SongCover = () => {
           </div>
 
           <div className="w-20 h-20 rounded-lg mr-4 overflow-hidden">
-            <Link to={`${track?.url}`} target="_blank">
-              {albumImage ? (
+            {albumImage && !coverError ? (
+              <Link to={`${track?.url}`} target="_blank">
                 <img
                   src={albumImage}
                   alt="Album cover"
+                  onError={() => setCoverError(true)}
                   className="w-full h-full object-cover cursor-pointer hover:scale-150 transition-transform duration-300 ease-in-out"
                 />
-              ) : (
-                <div className="w-full h-full bg-gray-100"></div>
-              )}
-            </Link>
+              </Link>
+            ) : (
+              <Skeleton className="rounded-lg w-full h-full" />
+            )}
           </div>
         </div>
       )}

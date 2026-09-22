@@ -45,6 +45,7 @@ interface CardComponentProps {
   frontendOnly?: boolean;
   lgSize?: string;
   pin?: PinStatus;
+  projectLayout?: boolean;
 }
 
 export const CardComponent = ({
@@ -67,6 +68,7 @@ export const CardComponent = ({
   frontendOnly,
   lgSize,
   pin,
+  projectLayout,
 }: CardComponentProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -79,8 +81,12 @@ export const CardComponent = ({
   return (
     <>
       <Card className="bg-transparent px-4 my-3 border-2 border-primary">
-        <CardHeader className="justify-between">
-          <div className="flex gap-4 mt-2">
+        <CardHeader className="justify-between gap-2">
+          <div
+            className={`flex ${
+              projectLayout ? "gap-3 items-center min-w-0 flex-1" : "gap-4 mt-2"
+            }`}
+          >
             <Avatar
               isBordered
               radius="full"
@@ -88,20 +94,42 @@ export const CardComponent = ({
               size="md"
               src={profileImage}
             />
-            <div className="flex flex-col gap-1 items-start justify-center">
-              <div className="flex flex-col sm:flex-row justify-start  items-center">
-                <h4 className="text-small text-white font-semibold leading-none">
-                  {name}
-                </h4>
-                <p className="text-xs tracking-tight text-start text-default-400 -ml-10 sm:ml-2">
-                  • {date}
-                </p>
-                {pin && (
-                  <span className={`ml-2 text-[10px] font-medium px-1.5 py-0.5 rounded border ${pinStyles[pin]}`}>
-                    {t(`projects.pin.${pin}`, { ns: "projects" })}
-                  </span>
-                )}
-              </div>
+            <div className="flex flex-col gap-1 items-start justify-center min-w-0">
+              {projectLayout ? (
+                <>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-y-1 sm:gap-y-0 sm:gap-x-1.5">
+                    <h4 className="text-small text-white font-semibold leading-none">
+                      {name}
+                    </h4>
+                    <div className="flex items-center gap-1.5 sm:ml-2">
+                      <p className="text-xs tracking-tight text-start text-default-400 whitespace-nowrap">
+                        • {date}
+                      </p>
+                      {pin && (
+                        <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded border ${pinStyles[pin]}`}>
+                          {t(`projects.pin.${pin}`, { ns: "projects" })}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="flex flex-col sm:flex-row justify-start items-center">
+                    <h4 className="text-small text-white font-semibold leading-none">
+                      {name}
+                    </h4>
+                    <p className="text-xs tracking-tight text-start text-default-400 -ml-10 sm:ml-2">
+                      • {date}
+                    </p>
+                    {pin && (
+                      <span className={`ml-2 text-[10px] font-medium px-1.5 py-0.5 rounded border ${pinStyles[pin]}`}>
+                        {t(`projects.pin.${pin}`, { ns: "projects" })}
+                      </span>
+                    )}
+                  </div>
+                </>
+              )}
               <h5 className="text-small tracking-tight text-default-400">
                 {username}
               </h5>
@@ -210,8 +238,8 @@ export const CardComponent = ({
           )}
 
           {galleryImages.length >= 3 && (
-            <div className="mt-3 grid grid-cols-2 gap-1">
-              <div className="relative row-span-2 min-h-[300px]">
+            <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-1">
+              <div className="relative aspect-[16/9] sm:aspect-auto sm:row-span-2 sm:min-h-[300px]">
                 <img
                   src={galleryImages[0].src}
                   alt={galleryImages[0].alt}

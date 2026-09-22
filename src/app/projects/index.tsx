@@ -54,6 +54,7 @@ export const Projects = () => {
         >
           <p className="text-default-400 text-sm mt-6 mb-8 px-4" dangerouslySetInnerHTML={{ __html: t("projects.work.intro", { ns: "projects" }) }} />
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -71,6 +72,7 @@ export const Projects = () => {
           />
 
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -84,6 +86,7 @@ export const Projects = () => {
           />
 
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -97,6 +100,7 @@ export const Projects = () => {
           />
 
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -110,6 +114,7 @@ export const Projects = () => {
           />
 
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -123,6 +128,7 @@ export const Projects = () => {
           />
 
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -136,6 +142,7 @@ export const Projects = () => {
           />
 
           <CardComponent
+            projectLayout
             profileImage={profile}
             name="Cristian Narvaez"
             date="2026"
@@ -157,6 +164,7 @@ export const Projects = () => {
           transition={{ duration: 0.25 }}
         >
           <CardComponent
+            projectLayout
             name="Cristian Narvaez"
             date="2026"
             username="@narvaez_sky"
@@ -172,6 +180,7 @@ export const Projects = () => {
             pin="public"
           />
           <CardComponent
+            projectLayout
             name="Cristian Narvaez"
             date="2026"
             username="@narvaez_sky"
@@ -187,6 +196,7 @@ export const Projects = () => {
             pin="public"
           />
           <CardComponent
+            projectLayout
             name="Cristian Narvaez"
             date="11/11/2024"
             username="@narvaez_sky"
@@ -205,6 +215,7 @@ export const Projects = () => {
             pin="public"
           />
           <CardComponent
+            projectLayout
             name="Cristian Narvaez"
             date="11/11/2024"
             username="@narvaez_sky"
@@ -223,6 +234,7 @@ export const Projects = () => {
             pin="public"
           />
           <CardComponent
+            projectLayout
             name="Cristian Narvaez"
             date="11/11/2024"
             username="@narvaez_sky"
