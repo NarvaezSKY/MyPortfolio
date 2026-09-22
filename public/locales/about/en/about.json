@@ -34,6 +34,11 @@
       "sena": "July 2022 - April 2024",
       "webDev": "April 2025 - Present",
       "computerEngineering": "February 2025 - Present"
+    },
+    "descriptions": {
+      "webDev": "Data processing and cleaning with Python and Power Query for institutional reports, interactive Power BI dashboards for strategic decision-making, predictive models for enrollment projections, fullstack apps to automate administrative and registration processes with automatic updates to Power BI, n8n automation workflows, generative AI, and local Debian server administration.",
+      "frontend": "Front-End development in React + TypeScript under Clean Architecture principles with Zustand for global state, responsive Mobile-First interfaces (Tailwind, NextUI) including the ConnectUp project, and Back-End service integration via Axios.",
+      "freelance": "Fullstack development of custom web applications for clients, from design to deployment."
     }
   },
   "studies": {

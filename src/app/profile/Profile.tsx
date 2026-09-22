@@ -3,8 +3,8 @@ import { Button, Spinner } from "@nextui-org/react";
 import { UseSongStore } from "../shared/store";
 import SongCover from "./components/song-cover/SongCover";
 import { PiReadCvLogoFill } from "react-icons/pi";
-import EnglishCV from "../../assets/CV/en/CV_Cristian_Narvaez_(English).pdf";
-import SpanishCV from "../../assets/CV/es/CV_Cristian_Narvaez_(Spanish).pdf";
+import EnglishCV from "../../assets/CV/en/CV_Cristian_Narvaez_2026_English.pdf";
+import SpanishCV from "../../assets/CV/es/CV_Cristian_Narvaez_2026_Español.pdf";
 
 import { FaBriefcase, FaCode, FaReact, FaCalendar } from "react-icons/fa";
 import profie from "../../assets/profile.jpg";

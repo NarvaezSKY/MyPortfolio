@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const TimelineItem = ({ title, subtitle, subtitleHref, date, delay }: {
+const TimelineItem = ({ title, subtitle, subtitleHref, date, description, delay }: {
   title: string;
   subtitle: string;
   subtitleHref?: string;
   date: string;
+  description?: string;
   delay: number;
 }) => (
   <motion.div
@@ -32,6 +33,11 @@ const TimelineItem = ({ title, subtitle, subtitleHref, date, delay }: {
         )}
       </h4>
       <p className="text-gray-400 text-sm">{date}</p>
+      {description ? (
+        <p className="text-gray-300 text-sm font-light leading-relaxed pt-1">
+          {description}
+        </p>
+      ) : null}
     </div>
   </motion.div>
 );
@@ -48,6 +54,7 @@ export const TimeLine = () => {
             subtitle={t("timeline.company", { ns: "about" })}
             subtitleHref="https://www.sena.edu.co"
             date={t("timeline.dates.webDev", { ns: "about" })}
+            description={t("timeline.descriptions.webDev", { ns: "about" })}
             delay={0}
           />
           <TimelineItem
@@ -55,12 +62,14 @@ export const TimeLine = () => {
             subtitle="BPOLabs Solutions"
             subtitleHref="https://bpolabsolutions.com/"
             date={t("timeline.dates.bpolabs", { ns: "about" })}
+            description={t("timeline.descriptions.frontend", { ns: "about" })}
             delay={0.15}
           />
           <TimelineItem
             title={t("timeline.fullstack", { ns: "about" })}
             subtitle="Freelance"
             date={t("timeline.dates.freelance", { ns: "about" })}
+            description={t("timeline.descriptions.freelance", { ns: "about" })}
             delay={0.3}
           />
         </div>

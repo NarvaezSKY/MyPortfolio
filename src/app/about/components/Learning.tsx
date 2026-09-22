@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button, Tooltip } from "@nextui-org/react";
 import { FaAws } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiNestjs } from "react-icons/si";
+import { SiNestjs, SiN8N } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import { Fragment } from "react";
 
@@ -96,6 +96,25 @@ export const Learning = () => {
             <FaAws
               size={40}
               className="text-orange-500 transition-transform duration-300 hover:scale-110 cursor-pointer"
+            />
+          </Button>
+        </Tooltip>
+
+        <Tooltip content="n8n" color="secondary">
+          <Button
+            as="a"
+            target="_blank"
+            size="lg"
+            href="https://n8n.io/"
+            variant="light"
+            isIconOnly
+            className="transition-transform duration-300 hover:scale-110 cursor-pointer animate-float"
+            style={{ animationDelay: "1s" }}
+          >
+            <SiN8N
+              size={40}
+              className="transition-transform duration-300 hover:scale-110 cursor-pointer"
+              style={{ color: "#EA4B71" }}
             />
           </Button>
         </Tooltip>
