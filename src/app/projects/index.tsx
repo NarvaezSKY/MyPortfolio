@@ -7,6 +7,8 @@ import profile from "../../assets/profile.jpg";
 import senathreads from "../../assets/projects/personal/senathreads.png";
 import rpm from "../../assets/projects/personal/rpm.png";
 import twitch from "../../assets/projects/personal/twitch.png";
+import befac from "../../assets/projects/personal/befac.png";
+import lumea from "../../assets/projects/personal/lumea.png";
 
 import carneImg from "../../assets/projects/for-work/carne/CarnéDeEgresadoSENARegionalCauca.jpg";
 import carnePresentation from "../../assets/projects/for-work/carne/presentation.jpg";
@@ -16,6 +18,7 @@ import pe04Img from "../../assets/projects/for-work/pe-04/Proyecto Actualizar PE
 import reportsCmrImg from "../../assets/projects/for-work/reports-cmr/ReportesCoordinaciónMisionalRegionalPowerBI.png";
 import segCmrImg from "../../assets/projects/for-work/seg-cmr/Seguimiento Plan Operativo CMR.png";
 import segIdiImg from "../../assets/projects/for-work/seg-idi/SeguimientoInnovaciónYCompetitividad.png";
+import predOfertaImg from "../../assets/projects/for-work/pred-oferta/ModeloPredictivoOfertaSENA.jpg";
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -65,6 +68,19 @@ export const Projects = () => {
             link="https://egresados-sena-cauca.ctpitech.net/"
             buttonText={t("check", { ns: "projects" })}
             pin="public"
+          />
+
+          <CardComponent
+            profileImage={profile}
+            name="Cristian Narvaez"
+            date="2026"
+            username="@narvaez_sky"
+            title="Modelo Predictivo Oferta SENA Regional Cauca"
+            description={t("projects.work.predOferta", { ns: "projects" })}
+            imageSrc={predOfertaImg}
+            imageAlt="Modelo Predictivo Oferta SENA Regional Cauca"
+            imageVariant="image"
+            pin="private"
           />
 
           <CardComponent
@@ -140,6 +156,36 @@ export const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.25 }}
         >
+          <CardComponent
+            name="Cristian Narvaez"
+            date="2026"
+            username="@narvaez_sky"
+            title="LUMEA - Nail Art & Beauty"
+            description={t("projects.lumea", { ns: "projects" })}
+            profileImage={profile}
+            link="https://lumea-by-vero.vercel.app/"
+            buttonText={t("check", { ns: "projects" })}
+            imageSrc={lumea}
+            imageAlt="LUMEA - Nail Art & Beauty"
+            imageVariant="image"
+            navigate={true}
+            pin="public"
+          />
+          <CardComponent
+            name="Cristian Narvaez"
+            date="2026"
+            username="@narvaez_sky"
+            title="BEFAC - Bachillerato Formal de Adultos del Cauca"
+            description={t("projects.befac", { ns: "projects" })}
+            profileImage={profile}
+            link="https://befac.vercel.app/"
+            buttonText={t("check", { ns: "projects" })}
+            imageSrc={befac}
+            imageAlt="BEFAC - Bachillerato Formal de Adultos del Cauca"
+            imageVariant="image"
+            navigate={true}
+            pin="public"
+          />
           <CardComponent
             name="Cristian Narvaez"
             date="11/11/2024"
