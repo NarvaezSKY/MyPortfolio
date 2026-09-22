@@ -97,11 +97,11 @@ export const CardComponent = ({
             <div className="flex flex-col gap-1 items-start justify-center min-w-0">
               {projectLayout ? (
                 <>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-y-1 sm:gap-y-0 sm:gap-x-1.5">
+                  <div className="flex flex-col sm:flex-row sm:items-center">
                     <h4 className="text-small text-white font-semibold leading-none">
                       {name}
                     </h4>
-                    <div className="flex items-center gap-1.5 sm:ml-2">
+                    <div className="flex items-center gap-1.5 mt-1 sm:ml-2 sm:mt-0">
                       <p className="text-xs tracking-tight text-start text-default-400 whitespace-nowrap">
                         • {date}
                       </p>
