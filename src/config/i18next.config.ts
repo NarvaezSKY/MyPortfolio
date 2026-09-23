@@ -1,17 +1,11 @@
 import i18next from "i18next";
 import Backend from "i18next-http-backend";
-import LanguageDetector from "i18next-browser-languagedetector";
+import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-const detectorWithCustom = LanguageDetector as unknown as {
-  addDetector: (detector: {
-    name: string;
-    lookup: () => string | undefined;
-    cacheUserLanguage: () => void;
-  }) => void;
-};
+const LanguageDetector = new I18nextBrowserLanguageDetector();
 
-detectorWithCustom.addDetector({
+LanguageDetector.addDetector({
   name: "esPriority",
   lookup() {
     const nav = typeof window !== "undefined" ? window.navigator : undefined;
